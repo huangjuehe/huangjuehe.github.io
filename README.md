@@ -1,2 +1,3 @@
 # My personal website
-welcome
+welcome :)
+hjh.github.io

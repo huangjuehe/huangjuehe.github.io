@@ -1,60 +1,405 @@
-<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="I17hXPcL7ft_0IrhdjSJMqSptrW29wfuub_XN_qc3yU" />
     <meta name="keywords" content="Huang Jue He, Computer Engineering, UPM, Portfolio, CV, GitHub, LinkedIn, CS, Software">
-    <title>Huang Jue He's Homepage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Söhne Mono", monospace, "Courier New";
-            background-color: #2B2926;
-            color: #f4f4f9;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        a {
-            color: #e5e7eb; /* Default link color */
-            text-decoration: none;
-        }
-        a:hover {
-            color: #d1d5db; /* Hover link color */
-        }
-        .dedicatory {
-            font-size: 0.8em;
-            font-style: italic;
-            margin-top: 30px;
-            padding: 10px;
-            border-top: 2px solid #e5e7eb;
-        }
-
-    </style>
+    <title>Hellou</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
 </head>
+
 <body>
-    <div>
-        <div style="font-size:1.5em; font-weight:300;">Huang Jue He</div>
-        <div><em>何黄珏</em></div>
-        <br>
-        <br>
-        <div>Universitat de Barcelona</div>
-        <div>Matemáticas</div>
-        <br>
-        <div>
-            <a href="mailto:huangjuehe@gmail.com?subject=Inquiry" target="_blank">Email</a> · 
-            <a href="https://huangjuehe.github.io/cv.pdf" target="_blank">CV</a> · 
-            <a href="https://github.com/huangjuehe" target="_blank">GitHub</a> · 
-            <a href="https://www.linkedin.com/in/hjhe/" target="_blank">LinkedIn</a>
+    <header>
+        <img src="./pics/header.jpg" alt="Header Image" class="header-image">
+    </header>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="tab-bar">
+                <div class="tab-link" data-target="home">Home</div>
+                <div class="tab-link" data-target="projects">Projects</div>
+                <div class="tab-link" data-target="reading">Reading</div>
+                <div class="tab-link" data-target="movies">Movies</div>
+            </div>
         </div>
-        <br>
-        <div class="dedicatory">
-            For my brother, my family & my friends
+        <!-- Main Content -->
+        <div class="content">
+            <section id="home" class="content-section active">
+                <div class="profile">
+                    <img src="pics/profile.jpg" alt="Profile Image" class="profile-pic">
+                    <div class="profile-text">
+                        <p><span class="highlight-title">Huang Jue He</span></p>
+                        <p>huangjuehe [ at ] gmail com</p>
+                        <p>@huangjuehe</p>
+                    </div>
+                </div>
+                <div class="about">
+                    <h2>A bit about myself</h2>
+                    <p class="narrow-text1">    
+                        Just a guy with too many interests, too little time and a quiet wish for a thousand lifetimes to master it all
+                        <br>
+                        <br> 
+						</p>
+                    <h2>Some of my interests</h2>
+                    <p class="narrow-text2">
+					Nodes of things that picked my interest in this life.
+                    <br>
+                    <br> 
+                    <div id="animation-container"></div>
+					<p id="image-description">clickable nodes
+					</p>
+                    <div class="center-image">
+                        <div class="logo-container">
+                        </div>
+                    </div>
+                    <h2>Technical background</h2>
+                    <p></p>
+                    <ul>
+                        <li><strong>[Sept 2025 - currently]</strong> 
+                             <span class="text-shift">
+                                Mathematics
+                            </span>
+                        </li>
+                        <li><strong>[jan 2020 - Sept 2025]</strong> 
+                             <span class="text-shift">
+                                 Things
+                             </span>
+                        </li>
+                        <li><strong>[Sept 2017 - January 2020]</strong> 
+                             <span class="text-shift">
+                                Computer Engineering
+                             </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2>Projects</h2>
+                <div class="project-flyer">
+                    <a href="project-writeup.html">
+                        <img src="files/split_keyboard/test2.jpg" alt="Project Image" class="project-image">
+                    </a>
+                    <div class="project-text">
+                        <a href="project-writeups/split-keyboard-writeup.html" class="project-title">How to make a keyboard money can't buy</a>
+                        <p class="project-description">
+							<div class="project-tags">
+								<span class="tag">#ergonomics</span>
+								<span class="tag">#splitKeyboard</span>
+								<span class="tag">#3dPrinting</span>
+							</div>
+                        <p class="project-description">
+							Short blog on how to build your own split keyboard, made for you and you only
+                        </p>
+                    </div>
+                </div>
+                <div class="project-flyer">
+                    <a href="project-writeup.html">
+                        <img src="files/lidar/test2.png" alt="Project Image" class="project-image">
+                    </a>
+                    <div class="project-text">
+                        <a href="project-writeups/lidar-writeup.html" class="project-title">Preprocessing data is everything in ML: Real-Time Curb Detection Using LiDAR</a>
+							<div class="project-tags">
+								<span class="tag">#machineLearning</span>
+								<span class="tag">#LiDAR</span>
+								<span class="tag">#realTime Systems</span>
+							</div>
+                        <p class="project-description">
+                            A short write-up about technology used to achieve high accuracy 
+                            “real-time” system using LiDAR to accurately detect curbs.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h2>Contact</h2>
+                <p>Content for contact goes here...</p>
+            </section>
+            <section id="wood-working" class="content-section">
+                <h2>Wood Working</h2>
+                <p>Content for wood working goes here...</p>
+            </section>
+
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content"> 
+            <span class="contact-info">
+                <a href="mailto:huangjuehe@gmail.com">Email</a> |
+                <a href="https://twitter.com/huangjuehe" target="_blank">Twitter</a>
+            </span>
+            <span class="copyright">For my brother, my family & my friends</span>
+        </div>
+    </footer>
+
+    <!-- p5.js Animation Script -->
+    <script>
+        // Array of skills
+        let skills = ["Mathematics", "Programming", "Finance", "Geography", "History", "Literature","Movies"];
+
+        // URLs for each skill
+        let skillURLs = {
+            "Mathematics": "math.html",
+            "Finance": "fin.html",
+            "Geography": "geo.html",
+            "History": "hist.html",
+            "Literature": "lit.html",
+            "Programming": "prog.html"
+        };
+        let dragged = false;
+
+        // Reference width for scaling
+        let referenceWidth = 500;
+        let scaleFactor;
+        let minTextSize = 12;
+        let minR = 10;
+
+        // Node radius (will be scaled)
+        let r;
+
+        // Offset between node and label (will be scaled)
+        let offset;
+
+        // Array to store nodes
+        let nodes = [];
+
+        // Array to store particles
+        let particles = [];
+
+        // Particle class for space dust
+        class Particle {
+            constructor(position, velocity, hue) {
+                this.position = position.copy();
+                this.velocity = velocity;
+                this.hue = hue;
+                this.lifespan = 20; // Fades out over 20 frames
+                this.initialLifespan = this.lifespan;
+                this.size = random(2, 4); // Small size for subtlety
+            }
+
+            update() {
+                this.position.add(this.velocity);
+                this.lifespan--;
+            }
+
+            display() {
+                let alpha = map(this.lifespan, 0, this.initialLifespan, 0, 255);
+                fill(this.hue, 10, 100, alpha); // Light, desaturated, fading color
+                noStroke();
+                circle(this.position.x, this.position.y, this.size);
+            }
+
+            isExpired() {
+                return this.lifespan <= 0;
+            }
+        }
+
+        function setup() {
+            let container = select('#animation-container');
+            let containerWidth = container.elt.offsetWidth;
+            let canvasHeight = containerWidth / 2; // Maintain 2:1 aspect ratio
+            let canvas = createCanvas(containerWidth, canvasHeight);
+            canvas.parent(container);
+            colorMode(HSB);
+
+            // Calculate scale factor based on canvas width
+            scaleFactor = containerWidth / referenceWidth;
+            let currentTextSize = max(minTextSize, 16 * scaleFactor);
+            textSize(currentTextSize);
+            r = max(minR, 15 * scaleFactor);
+            offset = 10 * scaleFactor;
+
+            generateNodes();
+			canvas.style('z-index', '1');
+        }
+
+        function draw() {
+            // Set background based on theme
+            if (document.body.classList.contains('dark-theme')) {
+                background(0); // Black for dark theme
+            } else {
+                background(255); // White for light theme
+            }
+
+            // Update node positions (floating animation)
+            for (let node of nodes) {
+                if (!node.isDragging) {
+                    let angle = frameCount * 0.01 + node.phase;
+                    node.currentPosition.x = node.initialPosition.x + node.ampX * sin(angle);
+                    node.currentPosition.y = node.initialPosition.y + node.ampY * cos(angle);
+                }
+            }
+
+            // Draw lines between consecutive nodes
+            if (document.body.classList.contains('dark-theme')) {
+                stroke(255); // White lines for dark theme
+            } else {
+                stroke(0); // Black lines for light theme
+            }
+            strokeWeight(1);
+            for (let i = 0; i < nodes.length - 1; i++) {
+                line(
+                    nodes[i].currentPosition.x,
+                    nodes[i].currentPosition.y,
+                    nodes[i + 1].currentPosition.x,
+                    nodes[i + 1].currentPosition.y
+                );
+            }
+
+            // Update and draw particles (space dust)
+            for (let i = particles.length - 1; i >= 0; i--) {
+                particles[i].update();
+                particles[i].display();
+                if (particles[i].isExpired()) {
+                    particles.splice(i, 1);
+                }
+            }
+
+            // Draw nodes with glow and labels
+            for (let node of nodes) {
+                // Glow effect
+                fill(node.hue, 25, 45, 100);
+                noStroke();
+                circle(node.currentPosition.x, node.currentPosition.y, 2 * r + 10);
+
+                // Node
+                fill(node.hue, 25, 90);
+                circle(node.currentPosition.x, node.currentPosition.y, 2 * r);
+
+                // Label
+                if (document.body.classList.contains('dark-theme')) {
+                    fill(255); // White text for dark theme
+                } else {
+                    fill(0); // Black text for light theme
+                }
+                text(node.label, node.currentPosition.x + r + offset, node.currentPosition.y);
+            }
+        }
+
+        function mousePressed() {
+            dragged = false;
+            let mousePos = createVector(mouseX, mouseY);
+            for (let node of nodes) {
+                if (p5.Vector.dist(mousePos, node.currentPosition) < r) {
+                    node.isDragging = true;
+                    break;
+                }
+            }
+        }
+
+        function mouseDragged() {
+            dragged = true;
+            for (let node of nodes) {
+                if (node.isDragging) {
+                    node.currentPosition.set(mouseX, mouseY);
+                    // Emit a space dust particle
+                    let velocity = p5.Vector.random2D().mult(random(0.5, 1.5));
+                    let particle = new Particle(node.currentPosition, velocity, node.hue);
+                    particles.push(particle);
+                }
+            }
+        }
+
+        function mouseReleased() {
+            for (let node of nodes) {
+                if (node.isDragging) {
+                    node.initialPosition.set(node.currentPosition);
+                    node.isDragging = false;
+                }
+            }
+        }
+
+        function mouseClicked() {
+            if (!dragged) {
+                let mousePos = createVector(mouseX, mouseY);
+                for (let node of nodes) {
+                    let x = node.currentPosition.x;
+                    let y = node.currentPosition.y;
+                    let labelWidth = textWidth(node.label);
+                    let left = x - r;
+                    let right = x + r + offset + labelWidth;
+                    let top = y - r;
+                    let bottom = y + r;
+                    if (mouseX >= left && mouseX <= right && mouseY >= top && mouseY <= bottom) {
+                        let url = skillURLs[node.label];
+                        if (url) {
+                            window.location.href = url;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+
+        function windowResized() {
+            let container = select('#animation-container');
+            let containerWidth = container.elt.offsetWidth;
+            let canvasHeight = containerWidth / 2;
+            resizeCanvas(containerWidth, canvasHeight);
+
+            // Recalculate scale factor and update sizes
+            scaleFactor = containerWidth / referenceWidth;
+            let currentTextSize = max(minTextSize, 16 * scaleFactor);
+            textSize(currentTextSize);
+            r = max(minR, 15 * scaleFactor);
+            offset = 10 * scaleFactor;
+
+            generateNodes();
+        }
+
+        function generateNodes() {
+            nodes = [];
+            for (let i = 0; i < skills.length; i++) {
+                let skill = skills[i];
+                let position;
+                let boundingBox;
+                let attempts = 0;
+                do {
+                    position = createVector(
+                        random(r + 20 * scaleFactor, width - (r + offset + textWidth(skill)) - 20 * scaleFactor),
+                        random(r + 20 * scaleFactor, height - r - 20 * scaleFactor)
+                    );
+                    let labelWidth = textWidth(skill);
+                    let left = position.x - r - 20 * scaleFactor;
+                    let right = position.x + r + offset + labelWidth + 20 * scaleFactor;
+                    let top = position.y - r - 10 * scaleFactor;
+                    let bottom = position.y + r + 10 * scaleFactor;
+                    boundingBox = { left, right, top, bottom };
+                    attempts++;
+                    if (attempts > 100) {
+                        console.log("Could not find non-overlapping position after 100 attempts for skill: " + skill);
+                        break;
+                    }
+                } while (nodes.some(node => boxesOverlap(boundingBox, node.boundingBox)));
+                if (attempts <= 100) {
+                    let hue = 200 + i * 5; // Pastel blues from hue 200 to 225
+                    let ampX = random(2, 5) * scaleFactor;
+                    let ampY = random(1, 3) * scaleFactor;
+                    nodes.push({
+                        initialPosition: position,
+                        currentPosition: position.copy(),
+                        label: skill,
+                        hue,
+                        boundingBox,
+                        phase: i * TWO_PI / skills.length,
+                        ampX,
+                        ampY,
+                        isDragging: false
+                    });
+                }
+            }
+        }
+
+        function boxesOverlap(boxA, boxB) {
+            return boxA.left < boxB.right && boxA.right > boxB.left &&
+                   boxA.top < boxB.bottom && boxA.bottom > boxB.top;
+        }
+    </script>
 </body>
+</html>
