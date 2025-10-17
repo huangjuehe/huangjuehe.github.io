@@ -1,3 +1,3 @@
 # My personal website
 welcome :)
-hjh.github.io
+https://huangjuehe.github.io
