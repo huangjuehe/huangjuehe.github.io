@@ -4,75 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="I17hXPcL7ft_0IrhdjSJMqSptrW29wfuub_XN_qc3yU" />
-    <meta name="keywords" content="Huang Jue He, Computer Engineering, UPM, Portfolio, CV, GitHub, LinkedIn, CS, Software">
-    <title>Hellou</title>
+    <meta name="keywords" content="huang jue he, computer science, mathematics, ub, barcelona, catalunya, computer engineering, linkedin, cs, software, portfolio, matematicas, matematiques">
+    <title>Huang Jue He - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="styles.css">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
 </head>
 
 <body>
-    <header>
+<header>
+    <div class="header-image-wrapper"> 
         <img src="./pics/header.jpg" alt="Header Image" class="header-image">
-    </header>
-    <div class="main-container">
-        <!-- Sidebar -->
+    </div>
+</header>
+
+<div class="main-container">
         <div class="sidebar">
             <div class="tab-bar">
                 <div class="tab-link" data-target="home">Home</div>
                 <div class="tab-link" data-target="projects">Projects</div>
-                <div class="tab-link" data-target="reading">Reading</div>
-                <div class="tab-link" data-target="movies">Movies</div>
+                <div class="tab-link" data-target="misc">Reading & Movies</div>
+                <div class="tab-link" data-target="blog">Blog</div>
             </div>
         </div>
-        <!-- Main Content -->
+        
         <div class="content">
             <section id="home" class="content-section active">
                 <div class="profile">
                     <img src="pics/profile.jpg" alt="Profile Image" class="profile-pic">
                     <div class="profile-text">
                         <p><span class="highlight-title">Huang Jue He</span></p>
-                        <p>huangjuehe [ at ] gmail com</p>
-                        <p>@huangjuehe</p>
+                            <p>Mathematics</p>
+                            <p>huangjuehe [ at ] gmail com</p>
+                            <p>
+                                <a href="files/cv.pdf" target="_blank">CV</a> 
+                                (<a href="files/cv_es.pdf" target="_blank">ES</a>)
+                                <span class="separator">·</span>
+                                <a href="https://twitter.com/huangjuehe" target="_blank">@huangjuehe</a>
+                                <span class="separator">·</span>      
+                                <a href="https://www.linkedin.com/in/hjhe/" target="_blank">LinkedIn</a>
+                            </p>
                     </div>
                 </div>
                 <div class="about">
-                    <h2>A bit about myself</h2>
-                    <p class="narrow-text1">    
-                        Just a guy with too many interests, too little time and a quiet wish for a thousand lifetimes to master it all
+                    <h2>About myself</h2>
+                    <p style="max-width: 90%; margin: 0 auto; text-align: center; font-family: 'Courier New', Courier, monospace;">
+                        <i>Just a guy with too many interests, too little time and a quiet wish for a thousand lifetimes to master it all.</i>
+                    </p>
+                    <br>
+                    <br>
+                        
+                    <h2>Some of my interests</h2>
+                    Nodes of things that picked my interest in this life.
                         <br>
                         <br> 
-						</p>
-                    <h2>Some of my interests</h2>
-                    <p class="narrow-text2">
-					Nodes of things that picked my interest in this life.
-                    <br>
-                    <br> 
-                    <div id="animation-container"></div>
-					<p id="image-description">clickable nodes
-					</p>
-                    <div class="center-image">
-                        <div class="logo-container">
-                        </div>
-                    </div>
-                    <h2>Technical background</h2>
-                    <p></p>
+                        <div id="animation-container"></div>
+                        <p id="image-description">clickable nodes</p>
+                        <br> 
+                    </p> <h2>Technical background</h2>
                     <ul>
-                        <li><strong>[Sept 2025 - currently]</strong> 
-                             <span class="text-shift">
-                                Mathematics
-                            </span>
+                        <li><strong>[sept 2025 - currently]</strong> 
+                            <span class="text-shift">Mathematics (UB)</span>
                         </li>
-                        <li><strong>[jan 2020 - Sept 2025]</strong> 
-                             <span class="text-shift">
-                                 Things
-                             </span>
+                        <li><strong>[jan 2020 - sept 2025]</strong> 
+                            <span class="text-shift">Things / Work</span>
                         </li>
-                        <li><strong>[Sept 2017 - January 2020]</strong> 
-                             <span class="text-shift">
-                                Computer Engineering
-                             </span>
+                        <li><strong>[sept 2018 - jan 2020]</strong> 
+                            <span class="text-shift">Computer Engineering (UPM)</span>
                         </li>
                     </ul>
                 </div>
@@ -80,77 +79,130 @@
 
             <section id="projects" class="content-section">
                 <h2>Projects</h2>
+                <br>
+                
                 <div class="project-flyer">
-                    <a href="project-writeup.html">
-                        <img src="files/split_keyboard/test2.jpg" alt="Project Image" class="project-image">
+                    <a href="projects/project1">
+                        <img src="projects/project1/calabiyaumaniforlds.jpg" alt="Math Paper" class="project-image">
                     </a>
                     <div class="project-text">
-                        <a href="project-writeups/split-keyboard-writeup.html" class="project-title">How to make a keyboard money can't buy</a>
+                        <a href="projects/project1" class="project-title">On the Properties of Manifolds</a>
+                        <div class="project-tags">
+                            <span class="tag">#Differential Geometry</span>
+                            <span class="tag">#Mathematics</span>
+                            <span class="tag">#Academic</span>
+                        </div>
                         <p class="project-description">
-							<div class="project-tags">
-								<span class="tag">#ergonomics</span>
-								<span class="tag">#splitKeyboard</span>
-								<span class="tag">#3dPrinting</span>
-							</div>
-                        <p class="project-description">
-							Short blog on how to build your own split keyboard, made for you and you only
+                            A short summary of my 2024 paper on the topological properties of n-dimensional manifolds.
                         </p>
                     </div>
                 </div>
+
                 <div class="project-flyer">
-                    <a href="project-writeup.html">
-                        <img src="files/lidar/test2.png" alt="Project Image" class="project-image">
+                    <a href="projects/project2">
+                        <img src="projects/project2/graph.gif" alt="Math Paper" class="project-image">
                     </a>
                     <div class="project-text">
-                        <a href="project-writeups/lidar-writeup.html" class="project-title">Preprocessing data is everything in ML: Real-Time Curb Detection Using LiDAR</a>
-							<div class="project-tags">
-								<span class="tag">#machineLearning</span>
-								<span class="tag">#LiDAR</span>
-								<span class="tag">#realTime Systems</span>
-							</div>
+                        <a href="projects/project2" class="project-title">Graph theory</a>
+                        <div class="project-tags">
+                            <span class="tag">#Discrete Math</span>
+                            <span class="tag">#Mathematics</span>
+                            <span class="tag">#Nodes</span>
+                            <span class="tag">#Graph Theory</span>
+                        </div>
                         <p class="project-description">
-                            A short write-up about technology used to achieve high accuracy 
-                            “real-time” system using LiDAR to accurately detect curbs.
+                            Template for whatever - graphs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-flyer">
+                    <a href="projects/project3">
+                        <img src="projects/project3/cudasolving.png" alt="PDE Solver Project" class="project-image">
+                    </a>
+                    <div class="project-text">
+                        <a href="projects/project3" class="project-title">Parallel PDE Solver in CUDA</a>
+                        <div class="project-tags">
+                            <span class="tag">#C++</span>
+                            <span class="tag">#CUDA</span>
+                            <span class="tag">#HPC</span>
+                        </div>
+                        <p class="project-description">
+                            Implementing a high-performance solver for complex systems using GPU acceleration.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section id="contact" class="content-section">
-                <h2>Contact</h2>
-                <p>Content for contact goes here...</p>
+            <section id="misc" class="content-section">
+                <h2>Reading & Movies</h2>
+                <p>A list of things I've enjoyed recently or that have stuck with me.</p>
+                <br>
+                
+                <h3>Reading</h3>
+                <ul class="link-list">
+                    <li><a href="misc/book-review-1.html">The Three-Body Problem</a> - Cixin Liu</li>
+                    <li><a href="misc/book-review-2.html">Gödel, Escher, Bach</a> - Douglas Hofstadter</li>
+                    <li><a href="misc/book-review-3.html">Stories of Your Life and Others</a> - Ted Chiang</li>
+                </ul>
+                <br>
+                
+                <h3>Movies</h3>
+                <ul class="link-list">
+                    <li><a href="misc/movie-review-1.html">Oppenheimer (2023)</a></li>
+                    <li><a href="misc/movie-review-2.html">Blade Runner 2049 (2017)</a></li>
+                    <li><a href="misc/movie-review-3.html">Arrival (2016)</a></li>
+                </ul>
             </section>
-            <section id="wood-working" class="content-section">
-                <h2>Wood Working</h2>
-                <p>Content for wood working goes here...</p>
+
+            <section id="blog" class="content-section">
+                <h2>Blog</h2>
+                <br>
+                <p>Occasional thoughts, musings, and notes.</p>
+                <br>
+                
+                <ul class="blog-list">
+                    <li>
+                        <span class="blog-date">Oct 18, 2025</span>
+                        <a href="blog/my-first-post.html">My First Post: Why Keep a Blog?</a>
+                    </li>
+                    <li>
+                        <span class="blog-date">Oct 15, 2025</span>
+                        <a href="blog/on-time.html">A Quick Thought on Time</a>
+                    </li>
+                    <li>
+                        <span class="blog-date">Oct 12, 2025</span>
+                        <a href="blog/project-update.html">Initial Thoughts on the PDE Solver</a>
+                    </li>
+                </ul>
             </section>
 
         </div>
     </div>
 
+    <br>
     <footer class="footer">
-        <div class="footer-content"> 
-            <span class="contact-info">
-                <a href="mailto:huangjuehe@gmail.com">Email</a> |
-                <a href="https://twitter.com/huangjuehe" target="_blank">Twitter</a>
-            </span>
+        <div class="footer-content">
             <span class="copyright">For my brother, my family & my friends</span>
+            <span class="copyright">© 2025 Huang Jue He. All rights reserved.</span>
         </div>
     </footer>
 
-    <!-- p5.js Animation Script -->
-    <script>
+
+<script>
         // Array of skills
         let skills = ["Mathematics", "Programming", "Finance", "Geography", "History", "Literature","Movies"];
 
-        // URLs for each skill
+        // *** FIX 1: Changed URLs to match your tab IDs ***
+        // Now, clicking a node will link to the #hash of the matching tab
         let skillURLs = {
-            "Mathematics": "math.html",
-            "Finance": "fin.html",
-            "Geography": "geo.html",
-            "History": "hist.html",
-            "Literature": "lit.html",
-            "Programming": "prog.html"
+            "Mathematics": "home",
+            "Finance": "blog",
+            "Geography": "home",
+            "History": "home",
+            "Literature": "misc",
+            "Movies": "misc",
+            "Programming": "projects"
         };
         let dragged = false;
 
@@ -172,7 +224,7 @@
         // Array to store particles
         let particles = [];
 
-        // Particle class for space dust
+        // Particle class (No changes)
         class Particle {
             constructor(position, velocity, hue) {
                 this.position = position.copy();
@@ -202,121 +254,106 @@
 
         function setup() {
             let container = select('#animation-container');
-            let containerWidth = container.elt.offsetWidth;
-            let canvasHeight = containerWidth / 2; // Maintain 2:1 aspect ratio
-            let canvas = createCanvas(containerWidth, canvasHeight);
-            canvas.parent(container);
-            colorMode(HSB);
-
-            // Calculate scale factor based on canvas width
-            scaleFactor = containerWidth / referenceWidth;
-            let currentTextSize = max(minTextSize, 16 * scaleFactor);
-            textSize(currentTextSize);
-            r = max(minR, 15 * scaleFactor);
-            offset = 10 * scaleFactor;
-
-            generateNodes();
-			canvas.style('z-index', '1');
+            if (container) {
+                let containerWidth = container.elt.offsetWidth;
+                let canvasHeight = containerWidth / 2; 
+                let canvas = createCanvas(containerWidth, canvasHeight);
+                canvas.parent(container);
+                colorMode(HSB);
+                scaleFactor = containerWidth / referenceWidth;
+                let currentTextSize = max(minTextSize, 16 * scaleFactor);
+                textSize(currentTextSize);
+                r = max(minR, 15 * scaleFactor);
+                offset = 10 * scaleFactor;
+                generateNodes();
+                canvas.style('z-index', '1');
+            } else {
+                console.log('p5.js: Could not find #animation-container');
+            }
         }
 
         function draw() {
-            // Set background based on theme
-            if (document.body.classList.contains('dark-theme')) {
-                background(0); // Black for dark theme
-            } else {
-                background(255); // White for light theme
-            }
-
-            // Update node positions (floating animation)
-            for (let node of nodes) {
-                if (!node.isDragging) {
-                    let angle = frameCount * 0.01 + node.phase;
-                    node.currentPosition.x = node.initialPosition.x + node.ampX * sin(angle);
-                    node.currentPosition.y = node.initialPosition.y + node.ampY * cos(angle);
+            if (typeof canvas !== 'undefined') {
+                background(36, 6, 16);
+                for (let node of nodes) {
+                    if (!node.isDragging) {
+                        let angle = frameCount * 0.01 + node.phase;
+                        node.currentPosition.x = node.initialPosition.x + node.ampX * sin(angle);
+                        node.currentPosition.y = node.initialPosition.y + node.ampY * cos(angle);
+                    }
                 }
-            }
-
-            // Draw lines between consecutive nodes
-            if (document.body.classList.contains('dark-theme')) {
-                stroke(255); // White lines for dark theme
-            } else {
-                stroke(0); // Black lines for light theme
-            }
-            strokeWeight(1);
-            for (let i = 0; i < nodes.length - 1; i++) {
-                line(
-                    nodes[i].currentPosition.x,
-                    nodes[i].currentPosition.y,
-                    nodes[i + 1].currentPosition.x,
-                    nodes[i + 1].currentPosition.y
-                );
-            }
-
-            // Update and draw particles (space dust)
-            for (let i = particles.length - 1; i >= 0; i--) {
-                particles[i].update();
-                particles[i].display();
-                if (particles[i].isExpired()) {
-                    particles.splice(i, 1);
+                stroke(255); 
+                strokeWeight(1);
+                for (let i = 0; i < nodes.length - 1; i++) {
+                    line(
+                        nodes[i].currentPosition.x,
+                        nodes[i].currentPosition.y,
+                        nodes[i + 1].currentPosition.x,
+                        nodes[i + 1].currentPosition.y
+                    );
                 }
-            }
-
-            // Draw nodes with glow and labels
-            for (let node of nodes) {
-                // Glow effect
-                fill(node.hue, 25, 45, 100);
-                noStroke();
-                circle(node.currentPosition.x, node.currentPosition.y, 2 * r + 10);
-
-                // Node
-                fill(node.hue, 25, 90);
-                circle(node.currentPosition.x, node.currentPosition.y, 2 * r);
-
-                // Label
-                if (document.body.classList.contains('dark-theme')) {
-                    fill(255); // White text for dark theme
-                } else {
-                    fill(0); // Black text for light theme
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    particles[i].update();
+                    particles[i].display();
+                    if (particles[i].isExpired()) {
+                        particles.splice(i, 1);
+                    }
                 }
-                text(node.label, node.currentPosition.x + r + offset, node.currentPosition.y);
+                for (let node of nodes) {
+                    fill(node.hue, 25, 45, 100);
+                    noStroke();
+                    circle(node.currentPosition.x, node.currentPosition.y, 2 * r + 10);
+                    fill(node.hue, 25, 90);
+                    circle(node.currentPosition.x, node.currentPosition.y, 2 * r);
+                    fill(200, 100, 100);
+                    text(node.label, node.currentPosition.x + r + offset, node.currentPosition.y);
+                }
             }
         }
 
         function mousePressed() {
-            dragged = false;
-            let mousePos = createVector(mouseX, mouseY);
-            for (let node of nodes) {
-                if (p5.Vector.dist(mousePos, node.currentPosition) < r) {
-                    node.isDragging = true;
-                    break;
+            if (typeof canvas !== 'undefined') {
+                dragged = false;
+                let mousePos = createVector(mouseX, mouseY);
+                for (let node of nodes) {
+                    if (p5.Vector.dist(mousePos, node.currentPosition) < r) {
+                        node.isDragging = true;
+                        break;
+                    }
                 }
             }
         }
 
         function mouseDragged() {
-            dragged = true;
-            for (let node of nodes) {
-                if (node.isDragging) {
-                    node.currentPosition.set(mouseX, mouseY);
-                    // Emit a space dust particle
-                    let velocity = p5.Vector.random2D().mult(random(0.5, 1.5));
-                    let particle = new Particle(node.currentPosition, velocity, node.hue);
-                    particles.push(particle);
+            if (typeof canvas !== 'undefined') {
+                dragged = true;
+                for (let node of nodes) {
+                    if (node.isDragging) {
+                        node.currentPosition.set(mouseX, mouseY);
+                        let velocity = p5.Vector.random2D().mult(random(0.5, 1.5));
+                        let particle = new Particle(node.currentPosition, velocity, node.hue);
+                        particles.push(particle);
+                    }
                 }
             }
         }
 
         function mouseReleased() {
-            for (let node of nodes) {
-                if (node.isDragging) {
-                    node.initialPosition.set(node.currentPosition);
-                    node.isDragging = false;
+            if (typeof canvas !== 'undefined') {
+                for (let node of nodes) {
+                    if (node.isDragging) {
+                        node.initialPosition.set(node.currentPosition);
+                        node.isDragging = false;
+                    }
                 }
             }
         }
 
+        // *** FIX 2: Replaced the 'mouseClicked' function ***
+        // This new function finds the matching tab and clicks it,
+        // instead of trying to redirect the whole page.
         function mouseClicked() {
-            if (!dragged) {
+            if (typeof canvas !== 'undefined' && !dragged) {
                 let mousePos = createVector(mouseX, mouseY);
                 for (let node of nodes) {
                     let x = node.currentPosition.x;
@@ -326,10 +363,15 @@
                     let right = x + r + offset + labelWidth;
                     let top = y - r;
                     let bottom = y + r;
+                    
                     if (mouseX >= left && mouseX <= right && mouseY >= top && mouseY <= bottom) {
-                        let url = skillURLs[node.label];
-                        if (url) {
-                            window.location.href = url;
+                        let targetId = skillURLs[node.label]; // e.g., "blog"
+                        if (targetId) {
+                            // Find the tab link with this data-target
+                            const targetLink = document.querySelector(`.tab-link[data-target="${targetId}"]`);
+                            if (targetLink) {
+                                targetLink.click(); // Simulate a click on the tab
+                            }
                         }
                         break;
                     }
@@ -339,21 +381,21 @@
 
         function windowResized() {
             let container = select('#animation-container');
-            let containerWidth = container.elt.offsetWidth;
-            let canvasHeight = containerWidth / 2;
-            resizeCanvas(containerWidth, canvasHeight);
-
-            // Recalculate scale factor and update sizes
-            scaleFactor = containerWidth / referenceWidth;
-            let currentTextSize = max(minTextSize, 16 * scaleFactor);
-            textSize(currentTextSize);
-            r = max(minR, 15 * scaleFactor);
-            offset = 10 * scaleFactor;
-
-            generateNodes();
+            if (container) {
+                let containerWidth = container.elt.offsetWidth;
+                let canvasHeight = containerWidth / 2;
+                resizeCanvas(containerWidth, canvasHeight);
+                scaleFactor = containerWidth / referenceWidth;
+                let currentTextSize = max(minTextSize, 16 * scaleFactor);
+                textSize(currentTextSize);
+                r = max(minR, 15 * scaleFactor);
+                offset = 10 * scaleFactor;
+                generateNodes();
+            }
         }
 
         function generateNodes() {
+            if (typeof canvas === 'undefined') return;
             nodes = [];
             for (let i = 0; i < skills.length; i++) {
                 let skill = skills[i];
@@ -373,12 +415,13 @@
                     boundingBox = { left, right, top, bottom };
                     attempts++;
                     if (attempts > 100) {
-                        console.log("Could not find non-overlapping position after 100 attempts for skill: " + skill);
+                        console.log("Could not find non-overlapping position for skill: " + skill);
                         break;
                     }
                 } while (nodes.some(node => boxesOverlap(boundingBox, node.boundingBox)));
+                
                 if (attempts <= 100) {
-                    let hue = 200 + i * 5; // Pastel blues from hue 200 to 225
+                    let hue = 200 + i * 5;
                     let ampX = random(2, 5) * scaleFactor;
                     let ampY = random(1, 3) * scaleFactor;
                     nodes.push({
@@ -400,6 +443,42 @@
             return boxA.left < boxB.right && boxA.right > boxB.left &&
                    boxA.top < boxB.bottom && boxA.bottom > boxB.top;
         }
+
+        // --- Tab Switching Logic (No changes needed) ---
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+                window.location.hash = targetId;
+            });
+        });
+
+        function loadSectionFromHash() {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const targetLink = document.querySelector(`.tab-link[data-target="${hash}"]`);
+                if (targetLink) {
+                    document.querySelectorAll('.content-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    document.getElementById(hash).classList.add('active');
+                }
+            }
+        }
+        
+        loadSectionFromHash();
+        window.addEventListener('hashchange', loadSectionFromHash);
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
+                initNodes();
+            }
+        });
+
     </script>
+    
 </body>
 </html>
